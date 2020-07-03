@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h2>JavaScript Arrays</h2>
+  <!-- for loop of array elements -->
+  <h5> Show Array element using the for loop </h5>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <script>
+    var animals, text, fLen, i;
+    animals = ["Cow", "Ox", "Dog", "Crow", "Buffalow", "Snake", "Tiger"];
+    fLen = animals.length;
+
+    text = "<ul>";
+    for (i = 0; i < fLen; i++) {
+      text += "<li>" + animals[i] + "</li>";
+    }
+    text += "</ul>";
+
+    document.getElementById("demo").innerHTML = text;
+  </script>
+
+  <!-- function foreach()for array elements  -->
+
+  <h5> Show Array element using the foreach() </h5>
+
+  <script>
+    var animals = ["Cow", "Ox", "Dog", "Crow", "Buffalow", "Snake", "Tiger"];
+    animals.forEach(mypet);
+
+    function mypet(item, index) {
+      document.getElementById("demo1").innerHTML += index + ":" + item + "<br>";
+    }
+  </script>
+ 
+</body>
+
+</html>
